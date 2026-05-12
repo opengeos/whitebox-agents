@@ -11,9 +11,9 @@ from qgis.PyQt.QtCore import Qt
 from qgis.PyQt.QtGui import QIcon
 from qgis.PyQt.QtWidgets import QAction, QMenu, QToolBar, QMessageBox
 
-
 TOOLBAR_OBJECT_NAME = "WhiteboxAgentToolbar"
 MENU_TITLE = "&Whitebox AI Agent"
+
 
 class WhiteboxAgentPlugin:
     """Whitebox AI Agent plugin implementation class for QGIS."""
@@ -155,7 +155,6 @@ class WhiteboxAgentPlugin:
             status_tip="About Whitebox AI Agent",
             parent=self.iface.mainWindow(),
         )
-
 
     def _remove_toolbar(self, toolbar):
         """Detach and schedule deletion of a plugin toolbar widget."""
